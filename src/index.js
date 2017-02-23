@@ -1,4 +1,2 @@
-
-document.write('My App...');
-console.log('Working...');
+console.log('added landing-page');
 

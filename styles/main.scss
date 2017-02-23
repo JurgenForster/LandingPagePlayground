@@ -1,4 +1,34 @@
 html, body {
+  font-family: 'Roboto Condensed', sans-serif;
   margin : 0;
   padding: 0;
+}
+
+div {
+  display: block;
+
+  &.landing {
+    position: absolute;
+    background: url('https://4.bp.blogspot.com/-Wtp1PVgdup8/U8vM7j1_jGI/AAAAAAABEFw/NJyAYcbszVc/s0/View+over+the+Convict+Lake_Ultra+HD.jpg') no-repeat top center #fafafa;
+    background-size: 100% auto;
+    width: 100%;
+    height: 1600px;
+
+    .layover{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+
+      h1 {
+        font-size: 4em;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        line-height: 10em;
+        text-align: center;
+        text-shadow: 1px 2px 5px #dd0000
+      }
+    }
+  }
 }

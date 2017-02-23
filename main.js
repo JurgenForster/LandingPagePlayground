@@ -3,3 +3,5 @@
 import './src/index';
 
 import './styles/main.scss';
+
+// import indexjs and html loader install
