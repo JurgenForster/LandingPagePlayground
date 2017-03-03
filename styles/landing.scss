@@ -1,0 +1,66 @@
+@keyframes fotoflash {
+  0% {
+    background-image:
+      radial-gradient(
+        ellipse,
+        map-get($landing, layover-light2),
+        map-get($landing, layover-light2)
+      );
+  }
+  10% {
+    background-image:
+      radial-gradient(
+        ellipse,
+        map-get($landing, layover-light1),
+        map-get($landing, layover-light2)
+      );
+  }
+  30% {
+    background-image:
+      radial-gradient(
+        ellipse,
+        map-get($landing, layover1),
+        map-get($landing, layover2)
+      );
+  }
+  100% {
+    background-image:
+      radial-gradient(
+        ellipse,
+        map-get($landing, layover1),
+        map-get($landing, layover2)
+      );
+  }
+}
+
+.landing {
+  position: absolute;
+  background: map-get($wallpapers, museum-inside) no-repeat top center map-get($landing, bg);
+  background-size: 100% auto;
+  width: 100%;
+  height: map-get($landing, height);
+
+  .layover{
+    position: absolute;
+    height: map-get($landing, height);
+    width: 100%;
+    animation: fotoflash 5s ease infinite;
+    background-image:
+    radial-gradient(
+                    ellipse,
+                    map-get($landing, layover1),
+                    map-get($landing, layover2)
+    );
+
+    h1 {
+      font-size: map-get($landing, title-size);
+      position: relative;
+      width: 100%;
+      height: map-get($landing, height);
+      color: map-get($landing, title-fg);
+      line-height: map-get($landing, height) * .8;
+      text-align: center;
+      text-shadow: map-get($landing, title-shadow);
+    }
+  }
+}
