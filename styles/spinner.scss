@@ -1,0 +1,48 @@
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+@mixin spinner {
+  display: block;
+  position: relative;
+  width: map-get($spinner, width);
+  height: map-get($spinner, height);
+  border: map-get($spinner, border-width) solid map-get($spinner, color1);
+  border-radius: map-get($spinner, radius-pair1) map-get($spinner, radius-pair1);
+
+  &::before {
+    content: '';
+    top: -10px;
+    left: -10px;
+    position: absolute;
+    display: block;
+    width: map-get($spinner, width);
+    height: map-get($spinner, height);
+    border: map-get($spinner, border-width) solid map-get($spinner, color2);
+    border-radius: map-get($spinner, radius-pair1) map-get($spinner, radius-pair2);
+    animation: spin 3s linear infinite;
+    animation-direction: reverse;
+  }
+
+  &::after {
+    top: -10px;
+    left: -10px;
+    content: '';
+    position: absolute;
+    display: block;
+    width: map-get($spinner, width);
+    height: map-get($spinner, height);
+    border: map-get($spinner, border-width) solid map-get($spinner, color3);
+    border-radius: map-get($spinner, radius-pair1) map-get($spinner, radius-pair2);
+    animation: spin 3s linear infinite;
+  }
+}

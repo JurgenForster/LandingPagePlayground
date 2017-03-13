@@ -1,0 +1,12 @@
+$spinner: (
+  color1: rgba(255, 165, 0, .3), // ring 1
+  color2: rgba(20, 115, 255, .3), // ring 2
+  color3: rgba(255, 0, 115, .3), // ring 3
+  // dimensions
+  width: 200px,
+  height: 200px,
+  border-width: 10px,
+  // ellipse makings
+  radius-pair1: 50%,
+  radius-pair2: 58% // schould be more than round (50%)
+);
