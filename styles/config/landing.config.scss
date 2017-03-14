@@ -5,10 +5,10 @@ $landing: (
   title-fg: $white,
   title-shadow: 1px 2px 5px $red,
   title-size: 4em,
+  title-family: $aurore,
   // layover
   layover1: rgba(0, 0, 0, .1) 10%,
   layover2: rgba(0, 0, 0, 1) 90%,
-
   layover-light1: rgba(255, 255, 255, .1) 30%,
   layover-light2: rgba(255, 255, 255, 1) 90%
 );

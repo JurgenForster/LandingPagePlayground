@@ -59,6 +59,7 @@
     }
 
     h1 {
+      font-family: map-get($landing, title-family);
       font-size: map-get($landing, title-size);
       position: relative;
       width: 100%;

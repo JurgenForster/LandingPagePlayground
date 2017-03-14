@@ -1,9 +1,11 @@
 $roboto-condensed: 'Roboto Condensed', sans-serif;
 $arial: Arial, sans-serif;
 $verdana: Verdana, sans-serif;
+$aurore: 'La Belle Aurore', cursive;
 
 $fonts: (
-        roboto:$roboto-condensed,
-        arial: $arial,
-        verdana: $verdana
+  roboto:$roboto-condensed,
+  arial: $arial,
+  verdana: $verdana,
+  aurore: $aurore
 );
